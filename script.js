@@ -18,7 +18,7 @@ Dị thôi đó, chứ muốn gì nữa.
 
 Hoi chưn chưn, nào gặp cho buvu.
 
-Ok chưaaaaaa ❤️`;
+❤️ Ok chưaaaaaa ❤️`;
 
 function openLetter() {
     document.getElementById("cover").style.display = "none";
