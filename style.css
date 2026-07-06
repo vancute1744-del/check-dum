@@ -28,6 +28,7 @@ body{
     font-size:48px;
     color:#ff4f87;
     margin-bottom:15px;
+    white-space: nowrap;
 }
 
 .cover p{
