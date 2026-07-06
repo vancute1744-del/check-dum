@@ -105,6 +105,8 @@ body{
     text-align:center;
     color:#ff4f87;
     margin-bottom:25px;
+    font-size:clamp(24px,4vw,36px);
+    white-space:nowrap;
 }
 
 #typing{
