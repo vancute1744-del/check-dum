@@ -25,7 +25,7 @@ body{
 }
 
 .cover h1{
-    font-size:48px;
+    font-size:clamp(30px,5vw,48px);
     color:#ff4f87;
     margin-bottom:15px;
     white-space: nowrap;
