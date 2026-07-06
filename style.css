@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5);
+    min-height:100vh;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+}
+
+.cover{
+    text-align:center;
+}
+
+.cover h1{
+    font-size:48px;
+    color:#ff4f87;
+    margin-bottom:15px;
+}
+
+.cover p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.envelope{
+    width:260px;
+    height:170px;
+    margin:0 auto;
+    background:#ff8fb1;
+    position:relative;
+    cursor:pointer;
+    border-radius:0 0 12px 12px;
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.envelope:hover{
+    transform:scale(1.05);
+}
+
+.envelope::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    height:0;
+    border-left:130px solid transparent;
+    border-right:130px solid transparent;
+    border-top:90px solid #ff6f9d;
+    transform-origin:top;
+}
+
+.envelope::after{
+    content:"💌";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-40%);
+    font-size:42px;
+}
+
+.open-text{
+    margin-top:20px;
+    color:#ff4f87;
+    font-weight:bold;
+}
+
+.letter{
+    display:none;
+    background:white;
+    margin-top:40px;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+    animation:show .8s;
+}
+
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.letter h2{
+    text-align:center;
+    color:#ff4f87;
+    margin-bottom:25px;
+}
+
+#typing{
+    white-space:pre-wrap;
+    line-height:2;
+    color:#444;
+    font-size:19px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:40px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    text-align:center;
+    margin-top:35px;
+    color:#ff4f87;
+    font-weight:bold;
+}
+
+.heart{
+    position:fixed;
+    top:-20px;
+    font-size:24px;
+    animation:fall linear forwards;
+    pointer-events:none;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
