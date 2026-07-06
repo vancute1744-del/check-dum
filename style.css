@@ -113,12 +113,11 @@ body{
     font-size:19px;
 }
 
-.gallery img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:20px;
-    transition:.3s;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:40px;
 }
 
 .gallery img{
